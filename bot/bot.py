@@ -33,8 +33,8 @@ But you can fix it by sending us the tracks you love as audio files!
 
 
 bot = Bot(
-    api_token=os.environ.get("API_TOKEN"),
-    name=os.environ.get("BOT_NAME"),
+    api_token=os.environ.get("1691371768:AAE1T-ieS89l1JKAi6dNOutknH_It7aMDWc"),
+    name=os.environ.get("SuabruMBot"),
     botan_token=os.environ.get("BOTAN_TOKEN")
 )
 logger = logging.getLogger("musicbot")
