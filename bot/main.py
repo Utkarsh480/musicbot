@@ -1,11 +1,18 @@
 import logging
 import asyncio
 import os
-
+import telebot
+bot = telebot.TeleBot("1691371768:AAE1T-ieS89l1JKAi6dNOutknH_It7aMDWc")
 from bot import bot
 from rest import RestBridge
 from database import prepare_index
+bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+	bot.reply_to(message, "Howdy, how are you doing?")
 
+bot.message_handler(func=lambda message: True)
+def echo_all(message):
+	bot.reply_to(message, message.text)
 rest = RestBridge(bot)
 
 async def start():
