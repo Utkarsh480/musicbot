@@ -13,8 +13,8 @@ async def start():
     await rest.start()
     await bot.loop()
 
-
-async def stop():
+username("SuabruMBot")
+sync def stop():
     await rest.stop()
 
 
